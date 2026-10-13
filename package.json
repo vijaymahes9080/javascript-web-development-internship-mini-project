@@ -1,0 +1,19 @@
+{
+  "name": "js-practical-studio",
+  "version": "1.0.0",
+  "description": "JS Practical Studio - Interactive JavaScript practical assignment studio & inventory intelligence platform",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/assignments.test.js",
+    "start": "node -e \"const http=require('http'),fs=require('fs'),path=require('path');http.createServer((req,res)=>{let f=req.url==='/'?'index.html':req.url.slice(1);f=path.join(__dirname,f);if(fs.existsSync(f)&&fs.statSync(f).isFile()){const m={'.html':'text/html','.css':'text/css','.js':'application/javascript','.json':'application/json'}[path.extname(f)]||'text/plain';res.writeHead(200,{'Content-Type':m});fs.createReadStream(f).pipe(res);}else{res.writeHead(404);res.end('Not found');}}).listen(3000,()=>console.log('Server running on http://localhost:3000'));\""
+  },
+  "keywords": [
+    "javascript",
+    "education",
+    "assignment-studio",
+    "inventory-management",
+    "testing"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}
