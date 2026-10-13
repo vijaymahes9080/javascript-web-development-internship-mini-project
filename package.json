@@ -14,6 +14,10 @@
     "inventory-management",
     "testing"
   ],
-  "author": "Antigravity Engineering",
-  "license": "MIT"
+  "author": "Vijay pradhap S",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vijaymahes9080/javascript-web-development-internship-mini-project.git"
+  }
 }
